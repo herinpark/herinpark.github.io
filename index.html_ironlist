@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+  <title>Herin's Art Works</title>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+ 
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+ 
+  <link rel="import" href="bower_components/polymer/polymer.html">
+  <link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout.html">
+  <link rel="import" href="bower_components/app-layout/app-header/app-header.html">
+  <link rel="import" href="bower_components/app-layout/app-toolbar/app-toolbar.html">
+  <link rel="import" href="bower_components/app-layout/app-scroll-effects/effects/waterfall.html">
+  <link rel="import" href="bower_components/iron-ajax/iron-ajax.html">
+  <link rel="import" href="bower_components/iron-image/iron-image.html">
+  <link rel="import" href="bower_components/iron-scroll-threshold/iron-scroll-threshold.html">
+  <link rel="import" href="bower_components/paper-spinner/paper-spinner.html">
+  <link rel="import" href="bower_components/iron-list/iron-list.html">
+ 
+  <style>
+    body {
+      margin: 0;
+      background-color: #f6f6f6;
+      font-family: 'Roboto', 'Noto', sans-serif;
+    }
+  </style>
+ 
+</head>
+<body unresolved>
+ 
+  <dom-module id="x-grid">
+    <template>
+      <style>
+        :host {
+          display: block;
+          @apply(--paper-font-common-base);
+        }
+        app-header {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 1;
+          background-color: #4285f4;
+          color: white;
+        }
+      app-toolbar {
+        background-color: var(--google-green-700);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+        font-weight: bold;
+        color: white;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      app-toolbar paper-icon-button {
+        --paper-icon-button-ink-color: white;
+      }
+        iron-list {
+          margin-top: 90px;
+          padding-bottom: 16px;
+        }
+        .photoContent {
+          @apply(--layout);
+          background-color: #ddd;
+          position: relative;
+          width: 300px;
+          height: 300px;
+          margin: 8px;
+        }
+		.photoContent:hover {
+		  zoom: 0.99;
+		}
+        .photoContent:hover .detail{
+          opacity: 1;
+        }
+        .photoContent > iron-image {
+          @apply(--layout-flex);
+        }
+        .photoContent > .detail {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+          color: white;
+          font-size: 20px;
+          font-weight: 100;
+          padding: 20px;
+          opacity: 0;
+          transition: opacity 0.1s;
+        }
+        .loadingIndicator {
+          font-size: 16px;
+          text-align: center;
+          height: 60px;
+        }
+        .loadingIndicator paper-spinner {
+          margin-right: 20px;
+          vertical-align: middle;
+        }
+        @media (max-width: 800px) {
+          .photoContainer {
+            width: calc(50% - 16px);
+          }
+          .photoContent {
+            width: auto;
+          }
+        }
+        @media (max-width: 400px) {
+          iron-list {
+            margin-top: 72px;
+          }
+          .photoContainer {
+            width: 100%;
+          }
+          .photoContent > .detail {
+            opacity: 1;
+          }
+        }
+        ::-webkit-input-placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+        ::-moz-placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+        :-ms-input-placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+        ::-ms-input-placeholder {
+          color: rgba(255, 255, 255, 0.5);
+        }
+		[title] {
+		  font-weight: 400;
+		  margin: 0 0 0 50px;
+		}                             
+      </style>
+                         
+	  <iron-ajax loading="{{!loadingPhotos}}" url="data/artworks.json" last-response="{{photos}}" auto></iron-ajax>
+	 
+	  <app-toolbar>
+		<div title>Herin Park</div>
+	  </app-toolbar>
+ 
+      <iron-list items="[[photos]]" as="photo" scroll-target="document" grid>
+        <template>
+          <div class="photoContainer">
+            <div class="photoContent" tabindex$="[[tabIndex]]">
+              <iron-image sizing="cover"
+                  src="[[photo.image]]">
+              </iron-image>
+              <div class="detail">[[photo.title]]</div>
+            </div>
+          </div>
+        </template>
+      </iron-list>
+ 
+      <div class="loadingIndicator" hidden$="[[loadingPhotos]]">
+        <paper-spinner active$="[[!loadingPhotos]]"></paper-spinner> Fetching Herin's artworks</b>
+      </div>
+ 
+    </template>
+  </dom-module>
+ 
+  <script>
+    HTMLImports.whenReady(function() {
+               
+      Polymer({
+        is: 'x-grid',
+        properties: {
+          photos: Array,
+          loadingPhotos: Boolean
+        },
+		attached: function() {
+			console.info(JSON.stringify(this.photos));
+		}
+ 
+      });
+    });
+  </script>
+ 
+  <x-grid></x-grid>
+ 
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+<dom-module id="book-viewer">
+  <template>
+    <style>
+      :host {
+        display: block;
+        @apply(--paper-font-common-base);
+      }
+      iframe {
+  		  margin-top: 30px;
+  		  margin-left: 0px;
+  		  background-color: white;
+  		}
+      @media (max-width: 800px) {
+        iframe {
+          width: calc(50% - 16px);
+        }
+        iframe {
+          width: auto;
+        }
+      }
+    </style>
+	  
+    <iframe width="700px" height="425px" src="[[viewUrl]]" frameborder="0" allowfullscreen allowtransparency></iframe>
+
+  </template>
+</dom-module>
+ 
+<script>
+               
+  Polymer({
+      is: 'book-viewer',
+
+      properties: {
+        viewUrl: String,
+        photos: Array,
+        loadingPhotos: Boolean
+      },
+
+  		attached: function() {
+  			console.info(JSON.stringify(this.photos));
+  		}
+
+  });
+
+</script>
+ 
+
+ 

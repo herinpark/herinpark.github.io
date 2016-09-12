@@ -1,0 +1,119 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="image-viewer">
+    <template>
+
+      <div class="toolbar">
+        <button on-click="_onPrevClick">&lt;&lt;</button>
+        <button on-click="_onNextClick">&gt;&gt;</button>
+      </div>
+
+      <neon-animated-pages id="pages" selected="[[selected]]" entry-animation="[[entryAnimation]]" exit-animation="[[exitAnimation]]">
+        <template is="dom-repeat" items="[[slides]]">
+            <neon-animatable>
+              <iron-image preload sizing="contain" src="[[item]]"></iron-image>
+            </neon-animatable>            
+        </template>
+<!--         <neon-animatable>
+          <iron-image preload sizing="contain" src="img/heroimage1@2x.jpg"></iron-image>
+        </neon-animatable>
+        <neon-animatable>
+          <iron-image preload sizing="contain" src="img/heroimage2@2x.jpg"></iron-image>
+        </neon-animatable>
+        <neon-animatable>
+            <iron-image preload sizing="contain" src="img/heroimage3@2x.jpg"></iron-image>
+        </neon-animatable>
+        <neon-animatable>
+            <iron-image preload sizing="contain" src="img/heroimage4@2x.jpg"></iron-image>
+        </neon-animatable> -->
+      </neon-animated-pages>
+
+    </template>
+</dom-module>
+
+<script>
+
+/*    Polymer({
+        is: 'image-viewer',
+
+        properties: {
+          slides: Array
+        },
+
+        ready: function() {
+            var tmp = this.slides;
+            
+        }
+
+    });*/
+
+      var scope = document.querySelector('image-viewer');
+      scope.selected = -1;
+      scope.counter = 0;
+      scope.ready = function() {
+       //this.async(function() {
+          this.nextCount();
+       //});
+      }
+
+      scope.nextCount = function () {
+          if (this.selected < 3) {
+            this.selected = this.selected + 1;
+          } else {
+            this.selected = 0;
+          }
+          //console.log(this.selected);
+          this.counter++;
+          console.log(this.counter);
+          this.async(this.nextCount, 6000);
+      }
+
+      scope._onPrevClick = function() {
+        this.entryAnimation = 'slide-from-left-animation';
+        this.exitAnimation = 'slide-right-animation';
+        //this.selected = this.selected === 0 ? 4 : (this.selected - 1);
+      }
+
+      scope._onNextClick = function() {
+        this.entryAnimation = 'slide-from-right-animation';
+        this.exitAnimation = 'slide-left-animation';
+        //this.selected = this.selected === 4 ? 0 : (this.selected + 1);
+      }
+
+    </script>
+<!-- 
+<dom-module id="image-viewer">
+    <template>
+    <style>        
+    </style>
+
+    <l2t-paper-slider total-slides="3">
+        <template is="dom-repeat" items="[[slides]]">
+            <paper-slide>1<img src="[[item]]"/></paper-slide>
+        </template>
+
+        
+        <paper-slide><img src="/images/monoprints14s/mp14s1.jpg"/></paper-slide>
+        <paper-slide><img src="/images/monoprints14s/mp14s2.jpg"/></paper-slide>
+        <paper-slide><img src="/images/monoprints14s/mp14s3.jpg"/></paper-slide>
+    </l2t-paper-slider>
+	
+    </template>
+</dom-module>
+
+<script>
+    		   
+    Polymer({
+        is: 'image-viewer',
+
+        properties: {
+          slides: Array
+        },
+
+        ready: function() {
+            var tmp = this.slides;
+        }
+
+    });
+
+</script> -->
