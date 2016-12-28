@@ -48,5 +48,15 @@
     "displayType": "image",
     "image": "images/sample5.png",
     "slides": []
+  },
+  {
+    "index": 5,
+    "title": "Xylofont",
+    "description": "Xylofont design.",
+    "category": "Webpage",
+    "date": "Fall, 2014",
+    "displayType": "webpage",
+    "image": "images/sample6.png",
+    "url": "../works/xylofont/index.html"
   }
 ]

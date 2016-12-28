@@ -14,6 +14,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <!-- <link rel="import" href="../bower_components/paper-toolbar/paper-toobar.html"> -->
 <link rel="import" href="../components/book-viewer.html">
 <link rel="import" href="../components/image-viewer.html">
+<link rel="import" href="../components/web-viewer.html">
 
 <dom-module id="full-view">
   <template>
@@ -36,19 +37,20 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         @apply(--layout-horizontal);
         @apply(--layout-center-justified);
       }
-      .media-text {
-        font-family: Tahoma, Georgia, Serif;
-      }
       .title {
         text-align: middle;
       }
       .description {
+        font-family: "Helvetica Neue","Arial","sans-serif";
         text-align: right;
-        margin-top: 300px;
+        margin-top: 330px;
         margin-left: 0px;
         margin-right: 1px;
         width: 180px;
-      }                      
+      }
+      .artwork-date {
+        font-size: 9pt;
+      }                     
     </style>
 	
 <!--     <paper-toolbar>
@@ -56,7 +58,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <span class="middle title">[[artwork.title]]</span>
       <paper-icon-button id="button" icon="clear" on-click="_onClearButtonClick"></paper-icon-button>
     </paper-toolbar> -->
-    
+
 <!-- <paper-toolbar justify="center">
   <paper-icon-button icon="menu"></paper-icon-button>
   <span class="title">[[artwork.title]]</span>
@@ -71,9 +73,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <br/><br/>
         <div><h3>[[artwork.title]]</h3></div>
         <br/>
-        <div>[[artwork.description]] additional description goese here.</div>
+        <div>[[artwork.description]]</div>
         <br/>
-        <div>[[artwork.date]]</div>
+<!--         <div class="artwork-date">[[artwork.date]]</div> -->
       </div>      
       <div class="flexchild">
         <div><book-viewer view-url="[[artwork.url]]"></book-viewer></div>
@@ -88,15 +90,32 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <br/><br/>
         <div><h3>[[artwork.title]]</h3></div>
         <br/>
-        <div>[[artwork.description]] additional description goese here.</div>
+        <div>[[artwork.description]]</div>
         <br/>
-        <div>[[artwork.date]]</div>
+<!--         <div class="artwork-date">[[artwork.date]]</div> -->
       </div>      
       <div class="flexchild">
         <div><image-viewer slides="[[artwork.slides]]"></image-viewer></div>
       </div>  
     </div>     
     </template>	
+
+  <template is="dom-if" if="{{_isWebpageType(media)}}">
+    <div class="container flex-horizontal">
+      <paper-icon-button icon="clear" on-click="_onClearButtonClick" title="Back"></paper-icon-button>
+      <div class="description">
+        <br/><br/>
+        <div><h3>[[artwork.title]]</h3></div>
+        <br/>
+        <div>[[artwork.description]]</div>
+        <br/>
+<!--         <div class="artwork-date">[[artwork.date]]</div> -->
+      </div>      
+      <div class="flexchild">
+        <div><web-viewer view-url="[[artwork.url]]"></web-viewer></div>
+      </div>  
+    </div>     
+    </template> 
 
   </template>
 </dom-module>
@@ -162,6 +181,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   	_isImageType: function(media) {
   		return media == "image";
   	},
+
+    _isWebpageType: function(media) {
+      return media == "webpage";
+    },
 
     _onClearButtonClick: function() {
       this.fire('close');

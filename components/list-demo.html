@@ -29,22 +29,44 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
       .header {
         margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
       }
       .header-item {
         margin-left: 50px;
-        margin-right:-15px;
+        margin-right:-25px;
+        cursor: pointer; 
+        cursor: hand;
+        font-size: 14px;
+        line-height: 4em;
+        letter-spacing: .1em;
+        color: #787878; 
+        padding-bottom: 3px;     
+      }
+      .header-item:hover {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      .artwork-text {
+        font-family: "Helvetica Neue","Arial","sans-serif";
+        text-transform: uppercase;
       }
       .author {
         margin-right: 50px;
         float: right;
+        font-size: 20px;
+        line-height: 2.7em;
+        font-weight: bold;
+      }
+      .active {
+        font-weight: bold;
+        text-decoration: underline;
       }
     </style>
 
-    <div class="header">
-      <span class="header-item" on-click="_switchPage">Work</span>
-      <span class="header-item" on-click="_switchPage">Resume</span>
-      <span class="header-item" on-click="_switchPage">About</span>
+    <div class="header artwork-text">
+      <span id="work" class="header-item" on-click="_switchPage">Work</span>
+      <span id="resume" class="header-item" on-click="_switchPage">Resume</span>
+      <span id="about" class="header-item" on-click="_switchPage">About</span>
       <span class="author">Herin Park</span>
     </div>
 
@@ -74,12 +96,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     },
 
     _switchPage: function(evt) {
-      if ("Work" == evt.currentTarget.innerHTML)
-        this.$.pages.selected = 0;      
-      else if ("Resume" == evt.currentTarget.innerHTML)
+      this.clearActiveSelection();
+      if ("Work" == evt.currentTarget.innerHTML) {
+        this.$.pages.selected = 0;
+        this.toggleClass("active", true, this.$.work);   
+      } else if ("Resume" == evt.currentTarget.innerHTML) {
         this.$.pages.selected = 2;
-      else if ("About" == evt.currentTarget.innerHTML)
-        this.$.pages.selected = 3;      
+        this.toggleClass("active", true, this.$.resume);
+      } else if ("About" == evt.currentTarget.innerHTML) {
+        this.$.pages.selected = 3;
+        this.toggleClass("active", true, this.$.about);
+      } 
+    },
+
+    clearActiveSelection: function() {
+      this.toggleClass("active", false, this.$.work);
+      this.toggleClass("active", false, this.$.resume);
+      this.toggleClass("active", false, this.$.about);
     }
 
   });

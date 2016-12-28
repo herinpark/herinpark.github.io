@@ -1,0 +1,64 @@
+
+<dom-module id="web-viewer">
+  <template>
+    <style>
+      :host {
+        display: block;
+        @apply(--paper-font-common-base);
+      }
+      iframe {
+  		  margin-top: 1px;
+  		  margin-left: 0px;
+  		  background-color: white;
+  		}
+      @media (max-width: 800px) {
+        iframe {
+          width: calc(50% - 16px);
+        }
+        iframe {
+          width: auto;
+        }
+      }
+      .calendar-container {
+          position: relative;
+          padding-bottom: 75%;
+          height: 0;
+          overflow: hidden;
+      }
+      iframe {
+          position: relative;
+          top:0;
+          left: 0;
+          width: 1100px;
+          height: 800px;
+      }
+    </style>
+	  
+<!--     <div class="calendar-container"> -->
+      <iframe src="[[viewUrl]]" frameborder="0" allowfullscreen allowtransparency></iframe>
+<!--     </div> -->
+
+  </template>
+</dom-module>
+ 
+<script>
+               
+  Polymer({
+      is: 'web-viewer',
+
+      properties: {
+        viewUrl: String,
+        photos: Array,
+        loadingPhotos: Boolean
+      },
+
+  		attached: function() {
+  			console.info(viewUrl);
+  		}
+
+  });
+
+</script>
+ 
+
+ 
