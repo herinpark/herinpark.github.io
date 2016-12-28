@@ -1,0 +1,54 @@
+
+<dom-module id="herin-about">
+  <template>
+    <style>
+      :host {
+        @apply(--layout-vertical);
+      }
+      .flex-center-justified {
+        @apply(--layout-horizontal);
+        @apply(--layout-center-justified);
+      }
+      .media-text {
+        font-family: Tahoma, Georgia, Serif;
+      }
+      .about {
+        margin-top: 100px;
+      }
+    </style>
+
+    <div class="about">
+      <div class="flex-center-justified media-text">
+        <div><p>Herin Park</p></div>
+      </div>
+      <div class="flex-center-justified media-text">
+        <div><p>10 Heritage Court</p></div>
+      </div>
+      <div class="flex-center-justified media-text">
+        <div><p>Cohoes, NY 12047</p></div>
+      </div>
+      <div class="flex-center-justified media-text">
+        <div><p>herinpark@gmail.com</p></div>
+      </div>
+    </div>  
+	  
+  </template>
+</dom-module>
+ 
+<script>
+               
+  Polymer({
+      is: 'herin-about',
+
+      properties: {
+      },
+
+  		attached: function() {
+  			console.log("About page is ready.");
+  		}
+  });
+
+</script>
+ 
+
+ 

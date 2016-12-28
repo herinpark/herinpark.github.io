@@ -28,6 +28,8 @@
     "iron-icons": "PolymerElements/iron-icons#^1.1.3",
     "iron-ajax": "PolymerElements/iron-ajax#^1.2.1",
     "iron-list": "PolymerElements/iron-list#^1.3.4",
-    "iron-image": "PolymerElements/iron-image#^1.2.3"
+    "iron-image": "PolymerElements/iron-image#^1.2.3",
+    "iron-pages": "^1.0.8",
+    "polymer-simple-slider": "^1.0.1"
   }
 }
