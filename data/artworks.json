@@ -37,7 +37,7 @@
     "date": "Spring, 2014",
     "displayType": "image",
     "image": "images/sample4.png",
-    "slides": ["../images/monoprints14s/mp14s1.jpg","../images/monoprints14s/mp14s2.jpg","../images/monoprints14s/mp14s3.jpg","../images/monoprints14s/mp14s4.jpg"]
+    "slides": ["../../images/monoprints14s/mp14s1.jpg","../../images/monoprints14s/mp14s2.jpg","../../images/monoprints14s/mp14s3.jpg","../../images/monoprints14s/mp14s4.jpg"]
   },
   {
     "index": 4,
@@ -47,7 +47,7 @@
     "date": "Fall, 2013",
     "displayType": "image",
     "image": "images/sample5.png",
-    "slides": []
+    "slides": ["../../images/collages13f/col13f1.jpg","../../images/collages13f/col13f2.jpg","../../images/collages13f/col13f3.jpg","../../images/collages13f/col13f4.jpg","../../images/collages13f/col13f5.jpg","../../images/collages13f/col13f6.jpg"]
   },
   {
     "index": 5,

@@ -6,68 +6,21 @@
   <template>
 
     <style>
-/*        #nav-example { position: relative; width: 600px; height: 300px; }
-        #nav-slider { position: absolute; top: 0px; left: 0px; z-index: 1;}
-        a.slide-button { position: absolute; padding: 130px 0px 0px 15px; top: 0px; left: 0px; z-index: 12; width: 30px; height: 300px; color: #FFF; background-color: rgba(0,0,0,0.4); text-decoration: none; font-weight: 600; box-sizing: border-box; }
-        #next-button { left: 570px; }*/
-/*      #slider {
-        max-width: 900px;
-        margin: 50px auto;
-      }*/
+
     </style>
-
-<!--     <div id="nav-example" style="float: left">
-
-        <simple-slider id="nav-slider" style="width:600px; height:300px" transition-property="opacity" start-value="0" visible-value="1" end-value="0" no-auto-play>
-
-          <img src="../../images/slider/02.jpg"/>
-          <img src="../../images/slider/04.jpg"/>
-          <img src="../../images/slider/05.jpg"/>
-        </simple-slider>
-
-        <a id="prev-button" on-click="previousSlide" href="#" class="slide-button">&lt;</a>
-        <a id="next-button" on-click="nextSlide" href="#" class="slide-button">&gt;</a>
-    </div> -->
-<!--       <div id="slider">
-        <img src="../../images/slider/02.jpg" />
-        <img src="../../images/slider/04.jpg" />
-        <img src="../../images/slider/05.jpg" />
-      </div> -->
-
-
-    <template is="dom-repeat" items="{{slides}}">
-
-<!-- <paper-card heading="Top western road trips" image="./trip.png" alt="Sailboat Harbor" class="white">
-  <div class="card-content">1,000 miles of wonder</div>
-  <div class="card-actions">
-    <paper-button>Share</paper-button>
-    <paper-button>Explore</paper-button>
-    <paper-icon-button icon="hardware:keyboard-arrow-up" title="more info" onclick="_toggle()" style="float:right;">
-    </paper-icon-button>
-    <iron-collapse id="more-info" style="width:100%;">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent enim ante, tempus eget volutpat ac, cursus ac ante. Nulla facilisi. Praesent sed lacinia ligula. Donec malesuada nisl eget quam iaculis, vel placerat justo cursus.
-    </iron-collapse>
-    <script>
-      function _toggle() {
-        var moreInfo = document.getElementById('more-info');
-        var iconButton = Polymer.dom(event).localTarget;
-        iconButton.icon = moreInfo.opened ? 'hardware:keyboard-arrow-up'
-                                          : 'hardware:keyboard-arrow-down';
-        moreInfo.toggle();
-      }
-    </script>
-  </div>
-</paper-card> -->
-
-    <img src="../{{item}}" />
-
-    </template>
+<!-- 
+    <div class="image-container"> -->
+      <template is="dom-repeat" items="{{slides}}">
+        <iron-image style="width:650px; height:400px;" sizing="contain" src="{{item}}"></iron-image>
+      </template>
+<!--     </div> -->
 
   </template>
 
   <script>
 
     Polymer({
+
         is: 'image-viewer',
 
         properties: {
@@ -77,36 +30,7 @@
           }
         },
 
-        slidesChanged: function() {
-            var tmp = this.slides;   
-/*            var slider = new IdealImageSlider.Slider('#slider');
-            slider.start(); */ 
-          this.data = [
-              {
-                  "title": "example title1",
-                  "info": "example information1.",
-                  "image": "../images/slider/02.jpg"
-              },
-              {
-                  "title": "example title2",
-                  "info": "example information2.",
-                  "image": "../images/slider/04.jpg"
-              },
-              {
-                  "title": "example title3",
-                  "info": "example information3.",
-                  "image": "../images/slider/05.jpg"
-              }
-          ];
-
-        },
-
-        previousSlide: function(evt) {
-          this.$$('#nav-slider').prev();
-        },
-
-        nextSlide: function(evt) {
-          this.$$('#nav-slider').next();
+        slidesChanged: function() {  
         }
 
     });

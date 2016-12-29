@@ -36,6 +36,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         margin-top: 10px;
         padding-bottom: 16px;
       }
+      @media (max-width: 800px) {
+        .photoContainer {
+          width: calc(50% - 16px);
+        }
+        .photoContent {
+          width: auto;
+        }
+      }
+      @media (max-width: 400px) {
+        iron-list {
+          margin-top: 72px;
+        }
+        .photoContainer {
+          width: 100%;
+        }
+        .photoContent > .detail {
+          opacity: 1;
+        }
+      }
       .photoContent {
         @apply(--layout);
         background-color: #ddd;
@@ -76,34 +95,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       <div class="author">HERIN PARK</div>
     </paper-toolbar> -->
 
-    <div class="main">
-<!--
-		<template is="dom-repeat" items="[[data]]">
+<!--     <div class="main"> -->
 
-          <paper-item>
-            <paper-item-body two-line>
-              <div>[[item.image]]</div>
-              <div secondary>[[item.title]]</div>
-            </paper-item-body>
-            <iron-icon icon="info"></iron-icon>
-          </paper-item>
-
-        </template>
--->
   		<iron-list items="[[data]]" as="photo" scroll-target="document" grid>
   			<template>
-  			  <div class="photoContainer">
+          <div class="photoContainer">
     				<div class="photoContent" tabindex$="[[tabIndex]]">
     				  <iron-image sizing="cover" on-click="_onClick" data-args="[[photo]]"
     					  src="[[photo.image]]">
     				  </iron-image>
     				  <div class="detail">[[photo.title]]</div>
     				</div>
-  			  </div>
+          </div>
   			</template>
   		</iron-list>
 	  
-    </div>
+<!--     </div> -->
 
   </template>
 </dom-module>
