@@ -64,7 +64,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <div class="header artwork-text">
       <span id="work" class="header-item" on-click="_switchPage">Work</span>
-      <span id="resume" class="header-item" on-click="_switchPage">Resume</span>
+      <span id="contact" class="header-item" on-click="_switchPage">Contact</span>
       <span id="about" class="header-item" on-click="_switchPage">About</span>
       <span class="author">Herin Park</span>
     </div>
@@ -99,9 +99,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       if ("Work" == evt.currentTarget.innerHTML) {
         this.$.pages.selected = 0;
         this.toggleClass("active", true, this.$.work);   
-      } else if ("Resume" == evt.currentTarget.innerHTML) {
+      } else if ("Contact" == evt.currentTarget.innerHTML) {
         this.$.pages.selected = 2;
-        this.toggleClass("active", true, this.$.resume);
+        this.toggleClass("active", true, this.$.contact);
       } else if ("About" == evt.currentTarget.innerHTML) {
         this.$.pages.selected = 3;
         this.toggleClass("active", true, this.$.about);
@@ -110,7 +110,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     clearActiveSelection: function() {
       this.toggleClass("active", false, this.$.work);
-      this.toggleClass("active", false, this.$.resume);
+      this.toggleClass("active", false, this.$.contact);
       this.toggleClass("active", false, this.$.about);
     }
 

@@ -47,12 +47,12 @@
     "date": "Fall, 2013",
     "displayType": "image",
     "image": "images/sample5.png",
-    "slides": ["../../images/collages13f/col13f1.jpg","../../images/collages13f/col13f2.jpg","../../images/collages13f/col13f3.jpg","../../images/collages13f/col13f4.jpg","../../images/collages13f/col13f5.jpg","../../images/collages13f/col13f6.jpg"]
+    "slides": ["../../images/collages13f/col13f2.jpg","../../images/collages13f/col13f3.jpg","../../images/collages13f/col13f4.jpg","../../images/collages13f/col13f5.jpg","../../images/collages13f/col13f6.jpg"]
   },
   {
     "index": 5,
     "title": "Xylofont",
-    "description": "Xylofont design.",
+    "description": "Xylofont design with stylesheet and javascripts.",
     "category": "Webpage",
     "date": "Fall, 2014",
     "displayType": "webpage",
