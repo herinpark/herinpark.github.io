@@ -85,6 +85,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   Polymer({
     is: 'list-demo',
 
+    attached: function() {
+      this.toggleClass("active", true, this.$.work);
+    },
+
     _onItemClick: function(evt) {
       this.$.pages.selected = 1;
       this.artwork = evt.detail.selectedItem;
