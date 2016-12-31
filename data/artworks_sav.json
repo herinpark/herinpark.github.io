@@ -1,0 +1,63 @@
+[
+  {
+    "index": 0,
+    "title": "esc",
+    "description": "esc magazine.",
+    "category": "Magazine",
+    "date": "Spring, 2016",
+    "displayType": "book",
+    "image": "images/sample1.png",
+    "url": "http://online.fliphtml5.com/gniv/kecs/#p=1"
+  },
+  {
+    "index": 1,
+    "title": "Invisible Woman",
+    "description": "Sample magazine.",
+    "category": "Magazine",
+    "date": "Spring, 2016",
+    "displayType": "book",
+    "image": "images/sample3.png",
+    "url": "http://online.fliphtml5.com/gniv/jkdt/#p=1"
+  },
+  {
+    "index": 2,
+    "title": "Xylofont",
+    "description": "Xylofont design with stylesheet and javascripts.",
+    "category": "Webpage",
+    "date": "Fall, 2014",
+    "displayType": "webpage",
+    "image": "images/sample6.png",
+    "url": "../works/xylofont/index.html"
+  },
+  {
+    "index": 3,
+    "title": "Collages",
+    "description": "Collages created from the class work.",
+    "category": "Poster",
+    "date": "Fall, 2013",
+    "displayType": "image",
+    "image": "images/sample5.png",
+    "slides": ["../../images/collages13f/col13f2.jpg","../../images/collages13f/col13f3.jpg","../../images/collages13f/col13f4.jpg","../../images/collages13f/col13f5.jpg","../../images/collages13f/col13f6.jpg"]
+  },
+  {
+    "index": 4,
+    "title": "Monoprints",
+    "description": "Monoprints created from the class work.",
+    "category": "Poster",
+    "date": "Spring, 2014",
+    "displayType": "image",
+    "image": "images/sample4.png",
+    "slides": ["../../images/monoprints14s/mp14s1.jpg","../../images/monoprints14s/mp14s2.jpg","../../images/monoprints14s/mp14s3.jpg","../../images/monoprints14s/mp14s4.jpg"]
+  }
+]
+
+/*  {
+    "index": 1,
+    "title": "Photobook",
+    "description": "Photobook made during the class work.",
+    "category": "Magazine",
+    "date": "Fall, 2014",
+    "displayType": "book",
+    "image": "images/sample2.png",
+    "url": "http://online.fliphtml5.com/gniv/hpnw/#p=1"
+  },*/ 

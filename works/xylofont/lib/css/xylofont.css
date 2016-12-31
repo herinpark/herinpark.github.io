@@ -2,7 +2,7 @@
 #rotated-bar {
     height:50px;
     width:15px;
-    background: white;
+    background: #A9A9A9;
     position:relative;
 	opacity:0.5;
 	border: 1px solid black;
@@ -20,7 +20,7 @@
 #rotated-bar4 {
     height:50px;
     width:15px;
-    background: white;
+    background: #A9A9A9;
     position:relative;
 	opacity:0.5;
 	border: 1px solid black;
@@ -38,7 +38,7 @@
 #left-bar {
     height:50px;
     width:15px;
-    background: white;
+    background: #A9A9A9;
     position:relative;
 	opacity:0.5;
 	border: 1px solid black;
@@ -50,7 +50,7 @@
 #left-half-top-bar {
     height:35px;
     width:15px;
-    background: white;
+    background: #A9A9A9;
     position:relative;
 	opacity: 0.5;
 	border: 1px solid black;
@@ -62,7 +62,7 @@
 #mid-bar {
     height:50px;
     width:15px;
-    background: white;
+    background: #A9A9A9;
     position:relative;
 	opacity:0.5;
 	border: 1px solid black;
@@ -75,7 +75,7 @@
 #mid-half-bar {
     height:35px;
     width:15px;
-    background: white;
+    background: #A9A9A9;
     position:relative;
 	opacity:0.5;
 	border: 1px solid black;
@@ -89,7 +89,7 @@
 #mid-half-center-bar {
     height:35px;
     width:15px;
-    background: white;
+    background: #A9A9A9;
     position:relative;
 	opacity:0.5;
 	border: 1px solid black;
@@ -103,7 +103,7 @@
 #top-half-bar {
     height:35px;
     width:15px;
-    background: white;
+    background: #A9A9A9;
     position:relative;
 	opacity:0.5;
 	border: 1px solid black;
@@ -117,7 +117,7 @@
 #mid-quarter-bar {
     height:12px;
     width:15px;
-    background: white;
+    background: #A9A9A9;
     position:relative;
 	opacity:0.5;
 	border: 1px solid black;
@@ -130,7 +130,7 @@
 #mid-quarter-bar-ex {
     height:12px;
     width:15px;
-    background: white;
+    background: #A9A9A9;
     position:relative;
 	opacity:0.5;
 	border: 1px solid black;
@@ -141,7 +141,7 @@
 #right-bar {
     height:50px;
     width:15px;
-    background: white;
+    background: #A9A9A9;
     position:relative;
 	opacity: 1.0;
 	border: 1px solid black;
@@ -155,7 +155,7 @@
 #right-half-top-bar {
     height:35px;
     width:15px;
-    background: white;
+    background: #A9A9A9;
     position:relative;
 	opacity: 1.0;
 	border: 1px solid black;
@@ -168,7 +168,7 @@
 #right-half-mid-bar {
     height:35px;
     width:15px;
-    background: white;
+    background: #A9A9A9;
     position:relative;
 	opacity: 1.0;
 	border: 1px solid black;
@@ -243,7 +243,7 @@
 
 #top-mid-line {
 	width: 19px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 0px;
 	left: 16px;
@@ -251,7 +251,7 @@
 
 #mid-mid-line {
 	width: 19px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 22px;
 	left: 16px;
@@ -259,7 +259,7 @@
 
 #bottom-mid-line {
 	width: 19px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 45px;
 	left: 16px;
@@ -267,7 +267,7 @@
 
 #bottom-mid-left-line {
 	width: 18px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 45px;
 	left: -19px;
@@ -275,7 +275,7 @@
 
 #top-right-line {
 	width: 33px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 0px;
 	left: 16px;
@@ -283,7 +283,7 @@
 
 #top-right-short-line {
 	width: 16px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 0px;
 	left: 16px;
@@ -291,7 +291,7 @@
 
 #top-left-short-line {
 	width: 16px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 0px;
 	left: -17px;
@@ -299,7 +299,7 @@
 
 #bottom-right-short-line {
 	width: 16px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 45px;
 	left: 16px;
@@ -307,7 +307,7 @@
 
 #bottom-left-short-line {
 	width: 16px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 45px;
 	left: -17px;
@@ -315,7 +315,7 @@
 
 #mid-right-line {
 	width: 33px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 22px;
 	left: 16px;
@@ -323,7 +323,7 @@
 
 #bottom-right-line {
 	width: 33px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 45px;
 	left: 16px;
@@ -331,7 +331,7 @@
 
 #bottom-left-line {
 	width: 33px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 45px;
 	left: 2px;
@@ -339,7 +339,7 @@
 
 #qu_leg {
 	width: 10px;
-	border-bottom: 3px solid silver;
+	border-bottom: 3px solid #212121;
 	-webkit-transform: rotate(50deg);
 	-moz-transform: rotate(50deg);
 	-o-transform: rotate(50deg);
@@ -352,7 +352,7 @@
 
 #k-top-line {
 	width: 38px;
-	border-bottom: 3px solid silver;
+	border-bottom: 3px solid #212121;
 	-webkit-transform: rotate(130deg);
 	-moz-transform: rotate(130deg);
 	-o-transform: rotate(130deg);
@@ -365,7 +365,7 @@
 
 #k-bottom-line {
 	width: 38px;
-	border-bottom: 3px solid silver;
+	border-bottom: 3px solid #212121;
 	-webkit-transform: rotate(40deg);
 	-moz-transform: rotate(40deg);
 	-o-transform: rotate(40deg);
@@ -378,7 +378,7 @@
 
 #m-left-line {
 	width: 25px;
-	border-bottom: 3px solid silver;
+	border-bottom: 3px solid #212121;
 	-webkit-transform: rotate(68deg);
 	-moz-transform: rotate(68deg);
 	-o-transform: rotate(68deg);
@@ -391,7 +391,7 @@
 
 #m-right-line {
 	width: 25px;
-	border-bottom: 3px solid silver;
+	border-bottom: 3px solid #212121;
 	-webkit-transform: rotate(112deg);
 	-moz-transform: rotate(112deg);
 	-o-transform: rotate(112deg);
@@ -404,7 +404,7 @@
 
 #vertical-line {
 	width: 40px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 22px;
 	left: 10px;
@@ -417,7 +417,7 @@
 
 #n-line {
 	width: 50px;
-	border-bottom: 3px solid silver;
+	border-bottom: 3px solid #212121;
 	-webkit-transform: rotate(70deg);
 	-moz-transform: rotate(70deg);
 	-o-transform: rotate(70deg);
@@ -430,7 +430,7 @@
 
 #zero-line {
 	width: 50px;
-	border-bottom: 3px solid silver;
+	border-bottom: 3px solid #212121;
 	-webkit-transform: rotate(70deg);
 	-moz-transform: rotate(70deg);
 	-o-transform: rotate(70deg);
@@ -443,7 +443,7 @@
 
 #r-line {
 	width: 30px;
-	border-bottom: 3px solid silver;
+	border-bottom: 3px solid #212121;
 	-webkit-transform: rotate(60deg);
 	-moz-transform: rotate(60deg);
 	-o-transform: rotate(60deg);
@@ -456,7 +456,7 @@
 
 #w-left-line {
 	width: 25px;
-	border-bottom: 3px solid silver;
+	border-bottom: 3px solid #212121;
 	-webkit-transform: rotate(110deg);
 	-moz-transform: rotate(110deg);
 	-o-transform: rotate(110deg);
@@ -469,7 +469,7 @@
 
 #w-right-line {
 	width: 25px;
-	border-bottom: 3px solid silver;
+	border-bottom: 3px solid #212121;
 	-webkit-transform: rotate(70deg);
 	-moz-transform: rotate(70deg);
 	-o-transform: rotate(70deg);
@@ -482,7 +482,7 @@
 
 #x-left-line {
 	width: 22px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 19px;
 	left: -23px;
@@ -495,7 +495,7 @@
 
 #x-right-line {
 	width: 22px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 25px;
 	left: 16px;
@@ -508,7 +508,7 @@
 
 #y-left-line {
 	width: 25px;
-	border-bottom: 3px solid silver;
+	border-bottom: 3px solid #212121;
 	-webkit-transform: rotate(30deg);
 	-moz-transform: rotate(30deg);
 	-o-transform: rotate(30deg);
@@ -521,7 +521,7 @@
 
 #y-right-line {
 	width: 25px;
-	border-bottom: 3px solid silver;
+	border-bottom: 3px solid #212121;
 	-webkit-transform: rotate(150deg);
 	-moz-transform: rotate(150deg);
 	-o-transform: rotate(150deg);
@@ -534,7 +534,7 @@
 
 #z-top-line {
 	width: 30px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 10px;
 	left: -28px;
@@ -547,7 +547,7 @@
 
 #z-bottom-line {
 	width: 30px;
-	border-top: 3px solid silver;
+	border-top: 3px solid #212121;
 	position: absolute;
 	top: 34px;
 	left: 13px;
