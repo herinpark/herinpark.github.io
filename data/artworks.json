@@ -1,6 +1,6 @@
 [
   {
-    "index": 0,
+    "index": 1,
     "title": "esc Magazine",
     "description": "Editorial magazine design",
     "category": "EDITORIAL DESIGN",
@@ -11,7 +11,7 @@
     "slides": ["../../images/esc/esc1.jpg","../../images/esc/esc2.jpg","../../images/esc/esc3.jpg","../../images/esc/esc4.jpg","../../images/esc/esc5.jpg","../../images/esc/esc6.jpg","../../images/esc/esc7.jpg"]
   },
     {
-    "index": 5,
+    "index": 7,
     "title": "bjork: A Restrospective",
     "description": "Editorial magazine design",
     "category": "EDITORIAL DESIGN",
@@ -21,7 +21,7 @@
     "slides": ["../../images/restrospective15s/bjork.png","../../images/restrospective15s/bjork2.png","../../images/restrospective15s/bjork3.png","../../images/restrospective15s/bjork4.png","../../images/restrospective15s/bjork5.png"]
   },
   {
-    "index": 1,
+    "index": 3,
     "title": "Invisible Woman",
     "description": "Editorial sample spread.",
     "category": "EDITORIAL SAMPLE SPREAD",
@@ -32,7 +32,7 @@
     "slides": []
   },
   {
-    "index": 2,
+    "index": 6,
     "title": "Xylofont",
     "description": "Xylofont design with stylesheet and javascripts.",
     "category": "FONT DESIGN",
@@ -42,7 +42,7 @@
     "url": "../works/xylofont/index.html"
   },
   {
-    "index": 3,
+    "index": 5,
     "title": "Collages",
     "description": "Collages created as mixed media work.",
     "category": "MIXED MEDIA",
