@@ -7,7 +7,8 @@
     "date": "Spring, 2016",
     "displayType": "book",
     "image": "images/sample1.png",
-    "url": "http://online.fliphtml5.com/gniv/kecs/#p=1"
+    "url": "http://online.fliphtml5.com/gniv/kecs/#p=1",
+    "slides": ["../../images/esc/esc1.jpg","../../images/esc/esc2.jpg"]
   },
     {
     "index": 5,
@@ -27,7 +28,8 @@
     "date": "Spring, 2016",
     "displayType": "book",
     "image": "images/sample3.png",
-    "url": "http://online.fliphtml5.com/gniv/jkdt/#p=1"
+    "url": "http://online.fliphtml5.com/gniv/jkdt/#p=1",
+    "slides": []
   },
   {
     "index": 2,

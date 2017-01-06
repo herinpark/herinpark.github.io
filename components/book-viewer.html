@@ -19,10 +19,18 @@
           width: auto;
         }
       }
+      .image-container {
+        margin-left: 105px;
+      }
     </style>
 	  
     <iframe width="800px" height="570px" src="[[viewUrl]]" frameborder="0" allowfullscreen allowtransparency></iframe>
-
+    <br/><br/>
+    <div class="image-container">
+      <template is="dom-repeat" items="{{slides}}">
+        <iron-image style="width:600px; height:450px;" sizing="contain" src="{{item}}"></iron-image>
+      </template>
+    </div>
   </template>
 </dom-module>
  
@@ -33,12 +41,15 @@
 
       properties: {
         viewUrl: String,
-        photos: Array,
+        slides: {
+          type: Array,
+          value: []
+        },
         loadingPhotos: Boolean
       },
 
   		attached: function() {
-  			console.info(JSON.stringify(this.photos));
+  			//console.info(JSON.stringify(this.photos));
   		}
 
   });
