@@ -9,6 +9,16 @@
     "image": "images/sample1.png",
     "url": "http://online.fliphtml5.com/gniv/kecs/#p=1"
   },
+    {
+    "index": 5,
+    "title": "A Restrospective",
+    "description": "A restrospctive.",
+    "category": "Magazine",
+    "date": "Spring, 2015",
+    "displayType": "image",
+    "image": "images/sample7.png",
+    "slides": ["../../images/restrospective15s/bjork.png","../../images/restrospective15s/bjork2.png","../../images/restrospective15s/bjork3.png","../../images/restrospective15s/bjork4.png","../../images/restrospective15s/bjork5.png"]
+  },
   {
     "index": 1,
     "title": "Invisible Woman",
