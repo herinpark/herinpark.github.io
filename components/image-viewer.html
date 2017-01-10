@@ -6,12 +6,17 @@
   <template>
 
     <style>
+      iron-image {
+        width:900px;
+        height:600px;
+        margin-bottom: 20px;
+      }
 
     </style>
 <!-- 
     <div class="image-container"> -->
       <template is="dom-repeat" items="{{slides}}">
-        <iron-image style="width:900px; height:600px;" sizing="contain" src="{{item}}"></iron-image>
+        <iron-image sizing="contain" src="{{item}}"></iron-image>
       </template>
 <!--     </div> -->
 

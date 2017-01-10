@@ -28,6 +28,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       paper-icon-button {
         margin-left: 60px;
       }
+      .main {
+        background: white;
+        @apply(--layout-flex);
+/*        @apply(--layout-scroll);
+        @apply(--shadow-elevation-8dp); */
+      }
       .flex-horizontal {
         @apply(--layout-horizontal);
       }
@@ -58,24 +64,26 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 	
     <div class="container flex-horizontal">
       <paper-icon-button id="button" icon="clear" on-click="_onClearButtonClick" title="Back"></paper-icon-button>
-      <div class="description">
-        <br/><br/>
-        <div><h3>[[artwork.title]]</h3></div>
-        <br/>
-        <div>[[artwork.description]]</div>
-        <br/>
-<!--         <div class="artwork-date">[[artwork.date]]</div> -->
-      </div>      
-      <div class="contents">      
-        <template is="dom-if" if="{{_isBookType(media)}}">
-          <book-viewer view-url="[[artwork.url]]" slides=[[artwork.slides]]></book-viewer>
-        </template>
-        <template is="dom-if" if="{{_isImageType(media)}}">
-          <image-viewer slides="[[artwork.slides]]"></image-viewer>
-        </template>
-        <template is="dom-if" if="{{_isWebpageType(media)}}">
-          <web-viewer view-url="[[artwork.url]]"></web-viewer>
-        </template>
+        <div class="description">
+          <br/><br/>
+          <div><h3>[[artwork.title]]</h3></div>
+          <br/>
+          <div>[[artwork.description]]</div>
+          <br/>
+  <!--         <div class="artwork-date">[[artwork.date]]</div> -->
+        </div>      
+      <div id="main" class="main">
+        <div class="contents">      
+          <template is="dom-if" if="{{_isBookType(media)}}">
+            <book-viewer view-url="[[artwork.url]]" slides=[[artwork.slides]]></book-viewer>
+          </template>
+          <template is="dom-if" if="{{_isImageType(media)}}">
+            <image-viewer slides="[[artwork.slides]]"></image-viewer>
+          </template>
+          <template is="dom-if" if="{{_isWebpageType(media)}}">
+            <web-viewer view-url="[[artwork.url]]"></web-viewer>
+          </template>
+        </div>
       </div>
     </div>
 

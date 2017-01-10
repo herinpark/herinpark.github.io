@@ -12,7 +12,7 @@
   },
     {
     "index": 7,
-    "title": "bjork: A Restrospective",
+    "title": "Bjork: A Restrospective",
     "description": "Editorial magazine design",
     "category": "EDITORIAL DESIGN",
     "date": "Spring, 2015",
@@ -23,18 +23,18 @@
   {
     "index": 3,
     "title": "Invisible Woman",
-    "description": "Editorial sample spread.",
+    "description": "Editorial sample spread",
     "category": "EDITORIAL SAMPLE SPREAD",
     "date": "Spring, 2016",
     "displayType": "book",
     "image": "images/sample3.png",
     "url": "https://www.yumpu.com/en/embed/view/LMlrBmAsVN80gHfn",
-    "slides": []
+    "slides": ["../../images/invisible/inv_woman1.jpg"]
   },
   {
     "index": 6,
     "title": "Xylofont",
-    "description": "Xylofont design with stylesheet and javascripts.",
+    "description": "Xylofont design with stylesheet and javascripts",
     "category": "FONT DESIGN",
     "date": "Fall, 2014",
     "displayType": "webpage",
@@ -44,7 +44,7 @@
   {
     "index": 5,
     "title": "Collages",
-    "description": "Collages created as mixed media work.",
+    "description": "Mixed media",
     "category": "MIXED MEDIA",
     "date": "Fall, 2013",
     "displayType": "image",
@@ -54,7 +54,7 @@
   {
     "index": 4,
     "title": "Monoprints",
-    "description": "Monoprints created as samples of preint making.",
+    "description": "",
     "category": "PRINT MAKING",
     "date": "Spring, 2014",
     "displayType": "image",
