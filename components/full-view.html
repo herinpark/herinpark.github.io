@@ -1,15 +1,7 @@
-<!--
-@license
-Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
 <link rel="import" href="../bower_components/paper-styles/shadow.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="../bower_components/neon-animation/neon-animatable-behavior.html">
 <link rel="import" href="../components/book-viewer.html">
 <link rel="import" href="../components/image-viewer.html">
@@ -25,7 +17,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         @apply(--layout-horizontal);
         @apply(--layout-center-justified);
       }*/
-      paper-icon-button {
+      iron-icon {
         margin-left: 60px;
       }
       .main {
@@ -63,14 +55,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </style>
 	
     <div class="container flex-horizontal">
-      <paper-icon-button id="button" icon="clear" on-click="_onClearButtonClick" title="Back"></paper-icon-button>
+      <iron-icon id="button" icon="icons:clear" on-click="_onClearButtonClick" title="Back"></iron-icon>
         <div class="description">
           <br/><br/>
           <div><h3>[[artwork.title]]</h3></div>
           <br/>
           <div>[[artwork.description]]</div>
           <br/>
-  <!--         <div class="artwork-date">[[artwork.date]]</div> -->
         </div>      
       <div id="main" class="main">
         <div class="contents">      
@@ -141,7 +132,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   	_artWorkChanged: function(newValue, oldValue) {
   		console.log(newValue + " " + oldValue);
   		this.media = newValue.displayType;
-  		//this.media = "image";
   	},
 
   	_isBookType: function(media) {

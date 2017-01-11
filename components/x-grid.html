@@ -1,0 +1,131 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../bower_components/iron-list/iron-list.html">
+
+<dom-module id="x-grid">
+  <template>
+    <style>
+      :host {
+        display: block;
+        @apply(--paper-font-common-base);
+      }
+      iron-list {
+        margin-top: 10px;
+        padding-bottom: 16px;
+      }
+      iron-image:hover {
+        cursor: pointer; 
+      }
+      .photoContent {
+        @apply(--layout);
+        background-color: #ddd;
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 1px;
+      }
+      .photoContent:hover .detail{
+        opacity: 1;
+      }
+      .photoContent > iron-image {
+        @apply(--layout-flex);
+      }
+      .photoContent > .detail {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+        color: white;
+        font-size: 14px;
+        font-weight: 100;
+        font-family: "Helvetica Neue","Arial","sans-serif";
+        padding: 40px;
+        opacity: 0;
+        transition: opacity 0.1s;
+      }
+      @media (max-width: 800px) {
+        .photoContainer {
+          width: calc(50% - 16px);
+        }
+        .photoContent {
+          width: auto;
+        }
+      }
+      @media (max-width: 400px) {
+        iron-list {
+          margin-top: 72px;
+        }
+        .photoContainer {
+          width: 100%;
+        }
+        .photoContent > .detail {
+          opacity: 1;
+        }
+      }
+      ::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      ::-moz-placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      :-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      ::-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    </style>
+
+    <iron-list items="[[artworks]]" as="work" scroll-target="document" grid>
+      <template>
+        <div class="photoContainer">
+          <div class="photoContent" tabindex$="[[tabIndex]]">
+            <iron-image sizing="cover" on-click="_onClick" data-args="[[work]]" src="[[work.image]]"></iron-image>
+            <div class="detail">
+              [[work.title]]<br/>[[work.category]]
+            </div>
+          </div>
+        </div>
+      </template>
+    </iron-list>
+
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'x-grid',
+
+      properties: { 
+        artworks: {
+          type: Array,
+          value: function() {
+            return [];
+          } 
+        }    
+      },
+      
+      _onClick: function(event) {
+        var target = event.target;
+        while (target !== this && !target._templateInstance) {
+          target = target.parentNode;
+        }
+        // configure the page animation
+        this.sharedElements = {
+          'hero': target,
+        };
+        this.fire('item-click', {
+          item: target, selectedItem: event.currentTarget.dataArgs
+        });
+      }
+
+    });
+  </script>
+
+  </dom-module>
+
+
+

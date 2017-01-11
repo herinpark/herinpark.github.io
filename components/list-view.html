@@ -101,15 +101,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <!--     <div class="main"> -->
 
-  		<iron-list items="[[data]]" as="photo" scroll-target="document" grid>
+  		<iron-list items="[[artwork]]" as="work" scroll-target="document" grid>
   			<template>
           <div class="photoContainer">
     				<div class="photoContent" tabindex$="[[tabIndex]]">
-    				  <iron-image sizing="cover" on-click="_onClick" data-args="[[photo]]"
-    					  src="[[photo.image]]">
+    				  <iron-image sizing="cover" on-click="_onClick" data-args="[[work]]"
+    					  src="[[work.image]]">
     				  </iron-image>
-    				  <div class="detail">[[photo.title]]<br/>
-                [[photo.category]]
+    				  <div class="detail">[[work.title]]<br/>
+                [[work.category]]
               </div>
     				</div>
           </div>
@@ -134,7 +134,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     },
 
     properties: {
-      data: {
+      artwork: {
         type: Array,
         value: function() {
           return [];
