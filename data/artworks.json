@@ -1,5 +1,15 @@
 [
   {
+    "index": 8,
+    "title": "H2O: Living In Awareness",
+    "description": "Exhibition design",
+    "category": "EXHIBITION DESIGN",
+    "date": "Spring, 2017",
+    "displayType": "image",
+    "image": "images/sample8.png",
+    "slides": ["../../images/h2o/h2o1.png","../../images/h2o/h2o2.png","../../images/h2o/h2o3.png","../../images/h2o/h2o4.png","../../images/h2o/h2o5.png","../../images/h2o/h2o6.png","../../images/h2o/h2o7.png","../../images/h2o/h2o8.png","../../images/h2o/h2o9.png"]
+  },
+  {
     "index": 1,
     "title": "esc Magazine",
     "description": "Editorial magazine design",
@@ -10,7 +20,7 @@
     "url": "https://www.yumpu.com/en/embed/view/qSC4v9nQuKDULxjm",
     "slides": ["../../images/esc/esc1.jpg","../../images/esc/esc2.jpg","../../images/esc/esc3.jpg","../../images/esc/esc4.jpg","../../images/esc/esc5.jpg","../../images/esc/esc6.jpg","../../images/esc/esc7.jpg"]
   },
-    {
+  {
     "index": 7,
     "title": "Bjork: A Restrospective",
     "description": "Editorial magazine design",
