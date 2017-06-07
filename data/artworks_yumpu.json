@@ -17,25 +17,14 @@
     "date": "Spring, 2016",
     "displayType": "book",
     "image": "images/sample1.png",
-    "url": "http://online.pubhtml5.com/btss/hnzg/",
+    "url": "https://www.yumpu.com/en/embed/view/qSC4v9nQuKDULxjm",
     "slides": ["../../images/esc/esc1.jpg","../../images/esc/esc2.jpg","../../images/esc/esc3.jpg","../../images/esc/esc4.jpg","../../images/esc/esc5.jpg","../../images/esc/esc6.jpg","../../images/esc/esc7.jpg"]
-  },
-  {
-    "index": 9,
-    "title": "/10,000",
-    "description": "/10,000: Book design",
-    "category": "BOOK DESIGN",
-    "date": "Spring, 2017",
-    "displayType": "book",
-    "image": "images/sample9.png",
-    "url": "http://online.pubhtml5.com/btss/sugl/",
-    "slides": []
   },
   {
     "index": 7,
     "title": "Bjork: A Restrospective",
-    "description": "Typeface design, Editorial spreads",
-    "category": "PROMOTION DESIGN",
+    "description": "Editorial magazine design",
+    "category": "EDITORIAL DESIGN",
     "date": "Spring, 2015",
     "displayType": "image",
     "image": "images/sample7.png",
@@ -44,12 +33,12 @@
   {
     "index": 3,
     "title": "Invisible Woman",
-    "description": "Editorial spreads",
-    "category": "EDITORIAL DESIGN",
+    "description": "Editorial sample spread",
+    "category": "EDITORIAL SAMPLE SPREAD",
     "date": "Spring, 2016",
     "displayType": "book",
     "image": "images/sample3.png",
-    "url": "http://online.pubhtml5.com/btss/muvj/",
+    "url": "https://www.yumpu.com/en/embed/view/LMlrBmAsVN80gHfn",
     "slides": ["../../images/invisible/inv_woman1.jpg"]
   },
   {
