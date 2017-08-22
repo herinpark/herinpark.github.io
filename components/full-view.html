@@ -29,6 +29,9 @@
       .flex-horizontal {
         @apply(--layout-horizontal);
       }
+      .flex-vertical {
+        @apply(--layout-vertical);
+      }
       .flexchild {
 /*        @apply(--layout-flex);*/
         @apply(--layout-horizontal);
@@ -51,19 +54,25 @@
       .contents {
         margin-left: 40px;
         width: 100%;
-      }                  
+      }
+      .long-description {
+        margin-top: 40px;
+        margin-left: 20%;
+        margin-right: 20%;
+      }                
     </style>
 	
     <div class="container flex-horizontal">
       <iron-icon id="button" icon="icons:clear" on-click="_onClearButtonClick" title="Back"></iron-icon>
-        <div class="description">
-          <br/><br/>
-          <div><h3>[[artwork.title]]</h3></div>
-          <br/>
-          <div>[[artwork.description]]</div>
-          <br/>
-        </div>      
+      <div class="description">
+        <br/><br/>
+        <div><h3>[[artwork.title]]</h3></div>
+        <br/>
+        <div>[[artwork.description]]</div>
+        <br/>
+      </div>      
       <div id="main" class="main">
+        <div class="flex-vertical">
         <div class="contents">      
           <template is="dom-if" if="{{_isBookType(media)}}">
             <book-viewer view-url="[[artwork.url]]" slides=[[artwork.slides]]></book-viewer>
@@ -75,7 +84,9 @@
             <web-viewer view-url="[[artwork.url]]"></web-viewer>
           </template>
         </div>
-      </div>
+        </div>
+        <div class="long-description">[[artwork.long_desc]]</div>
+      </div>      
     </div>
 
   </template>

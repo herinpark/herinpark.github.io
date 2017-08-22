@@ -9,31 +9,43 @@
         @apply(--layout-horizontal);
         @apply(--layout-center-justified);
       }
+  		.flex-equal-justified {
+  		  @apply --layout-horizontal;
+  		  @apply --layout-justified;
+  		}	 
+      .flex-equal-around-justified {
+        @apply --layout-horizontal;
+        @apply --layout-around-justified;
+      } 
       .about {
         margin-top: 70px;
+        width: 90%;
       }
       .artwork-text {
-        font-family: "Helvetica Neue","Arial","sans-serif";
+        font-family: "Input Mono Narrow", "Helvetica Neue", Arial, Helvetica, sans-serif; 
       }
       .author {
         font-size: 20px;
         line-height: 2.7em;
         font-weight: bold;
       }
+      .herin-photo {
+        margin-left: 20%;
+        width: 55%;
+      }
+      .description {
+        margin-left: -15%;
+        width: 40%
+      }
     </style>
 
     <div class="about">
-      <div class="flex-center-justified artwork-text">
-	<div>
-          <p class="author">Herin Park</p>
-	  <p>NY based graphic designer.<br/>
-	     Parsons The New School for Design<br/>
-	     Communication Design</p>
-	</div>
+      <div class="flex-equal-around-justified artwork-text">
+        <div class="photo"><img class="herin-photo" src="../images/herin.jpg"/></div>
+        <div class="description">I’m a NY based graphic designer attending Parsons The New School for Design. Currently, I am back in Albany for the fall semester seeking an internship. Feel free to reach out by email for any open opportunities, or just to grab coffee.</div>
       </div>
       <br/>
-    </div>  
-	  
+    </div>  	  
   </template>
 </dom-module>
  
