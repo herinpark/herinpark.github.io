@@ -53,6 +53,9 @@
         font-weight: bold;
         text-decoration: underline;
       }
+      .grid {
+        margin-left: 10px;
+      }
     </style>
 
     <div class="header artwork-text">
@@ -64,7 +67,7 @@
     </div>
 
     <neon-animated-pages id="pages" selected="0">
-      <list-view artwork="[[artworks]]" on-item-click="_onItemClick"></list-view>
+      <list-view class="grid" artwork="[[artworks]]" on-item-click="_onItemClick"></list-view>
 <!--       <x-grid artworks="[[artworks]]" on-item-click="_onItemClick"></x-grid> -->
       <full-view artwork=[[artwork]] on-close="_onClose"></full-view>
       <herin-resume></herin-resume>
