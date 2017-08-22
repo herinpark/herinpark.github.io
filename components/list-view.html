@@ -10,7 +10,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="../bower_components/iron-icon/iron-icon.html">
-<link rel="import" href="../bower_components/iron-list/iron-list.html">
+<!-- <link rel="import" href="../bower_components/iron-list/iron-list.html"> -->
 <link rel="import" href="../bower_components/iron-image/iron-image.html">
 <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
@@ -58,6 +58,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       iron-image:hover {
         cursor: pointer; 
        }
+      .flex-wrap {
+        @apply --layout-horizontal;
+        @apply --layout-wrap;
+      }
       .photoContent {
         @apply(--layout);
         background-color: #ddd;
@@ -101,20 +105,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <!--     <div class="main"> -->
 
-  		<iron-list items="[[artwork]]" as="work" scroll-target="document" grid>
-  			<template>
+  		<!-- <iron-list items="[[artwork]]" as="work" scroll-target="document" grid> -->
+      <div class="flex-wrap">
+  			<template is="dom-repeat" items="[[artwork]]">
           <div class="photoContainer">
     				<div class="photoContent" tabindex$="[[tabIndex]]">
-    				  <iron-image sizing="cover" on-click="_onClick" data-args="[[work]]"
-    					  src="[[work.image]]">
+    				  <iron-image sizing="cover" on-click="_onClick" data-args="[[item]]"
+    					  src="[[item.image]]">
     				  </iron-image>
-    				  <div class="detail">[[work.title]]<br/>
-                [[work.category]]
+    				  <div class="detail">[[item.title]]<br/>
+                [[item.category]]
               </div>
     				</div>
           </div>
   			</template>
-  		</iron-list>
+      </div>
+  		<!-- </iron-list> -->
 	  
 <!--     </div> -->
 
