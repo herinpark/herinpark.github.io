@@ -8,6 +8,7 @@
 <link rel="import" href="full-view.html">
 <link rel="import" href="herin-about.html">
 <link rel="import" href="herin-resume.html">
+<link rel="import" href="herin-photography.html">
 
 <dom-module id="artwork-demo">
   <template>
@@ -58,6 +59,7 @@
       <span id="work" class="header-item" on-click="_switchPage">Work</span>
       <span id="contact" class="header-item" on-click="_switchPage">Contact</span>
       <span id="about" class="header-item" on-click="_switchPage">About</span>
+      <span id="photography" class="header-item" on-click="_switchPage">Photography</span>
       <span class="author">Herin Park</span>
     </div>
 
@@ -67,6 +69,7 @@
       <full-view artwork=[[artwork]] on-close="_onClose"></full-view>
       <herin-resume></herin-resume>
       <herin-about></herin-about>
+      <herin-photography></herin-phtography>
     </neon-animated-pages>
    
     <iron-ajax url="../data/artworks.json" last-response="{{artworks}}" auto></iron-ajax> 
@@ -102,6 +105,9 @@
       } else if ("About" == evt.currentTarget.innerHTML) {
         this.$.pages.selected = 3;
         this.toggleClass("active", true, this.$.about);
+      } else if ("Photography" == evt.currentTarget.innerHTML) {
+        this.$.pages.selected = 4;
+        this.toggleClass("active", true, this.$.photography);
       } 
     },
 
@@ -109,6 +115,7 @@
       this.toggleClass("active", false, this.$.work);
       this.toggleClass("active", false, this.$.contact);
       this.toggleClass("active", false, this.$.about);
+      this.toggleClass("active", false, this.$.photography);
     }
 
   });

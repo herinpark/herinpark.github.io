@@ -1,0 +1,53 @@
+
+<dom-module id="herin-photography">
+  <template>
+    <style>
+      :host {
+        @apply(--layout-vertical);
+      }
+      .flex-center-justified {
+        @apply(--layout-horizontal);
+        @apply(--layout-center-justified);
+      }
+      .contact {
+        margin-top: 70px;
+      }
+      .artwork-text {
+        font-family: "Input Mono Narrow", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    margin-left: 30%;
+    margin-right: 30%;
+      }
+      .author {
+        font-size: 20px;
+        line-height: 2.7em;
+        font-weight: bold;
+      }
+    </style>
+
+    <div class="contact">
+      <div class="flex-center-justified artwork-text">
+        <div><p>Under construction</p></div>
+      </div>
+      <br/>
+    </div>  
+    
+  </template>
+</dom-module>
+ 
+<script>
+               
+  Polymer({
+      is: 'herin-photography',
+
+      properties: {
+      },
+
+      attached: function() {
+        console.log("Resume page is ready.");
+      }
+  });
+
+</script>
+ 
+
+ 
