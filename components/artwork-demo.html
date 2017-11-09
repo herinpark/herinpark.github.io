@@ -8,7 +8,7 @@
 <link rel="import" href="full-view.html">
 <link rel="import" href="herin-about.html">
 <link rel="import" href="herin-resume.html">
-<link rel="import" href="herin-photography.html">
+<!-- <link rel="import" href="herin-photography.html"> -->
 
 <dom-module id="artwork-demo">
   <template>
@@ -72,7 +72,7 @@
       <full-view artwork=[[artwork]] on-close="_onClose"></full-view>
       <herin-resume></herin-resume>
       <herin-about></herin-about>
-      <herin-photography></herin-phtography>
+      <!-- <herin-photography></herin-phtography> -->
     </neon-animated-pages>
    
     <iron-ajax url="../data/artworks.json" last-response="{{artworks}}" auto></iron-ajax> 

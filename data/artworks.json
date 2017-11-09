@@ -2,13 +2,13 @@
   {
     "index": 10,
     "title": "The Arts Center",
-    "description": "The Arts Center description goes here",
+    "description": "",
     "long_desc": "",
-    "category": "EDITORIAL DESIGN",
+    "category": "MARKETING/BRANDING IDENTITY",
     "date": "Fall, 2017",
     "displayType": "image",
     "image": "images/sample10.jpg",
-    "slides": ["../../images/artcenter/artcenter1.jpg","../../images/artcenter/artcenter2.png","../../images/artcenter/artcenter3.jpg","../../images/artcenter/artcenter4.png","../../images/artcenter/artcenter5.jpg","../../images/artcenter/artcenter6.png"]
+    "slides": ["../../images/artcenter/artcenter1.png","../../images/artcenter/artcenter2.png","../../images/artcenter/artcenter3.jpg","../../images/artcenter/artcenter4.png","../../images/artcenter/artcenter45.jpg","../../images/artcenter/artcenter5.png","../../images/artcenter/artcenter6.jpg","../../images/artcenter/artcenter7.png"]
   },
   {
     "index": 8,
