@@ -1,5 +1,17 @@
 [
   {
+    "index": 11,
+    "title": "The Arts Center Catalog",
+    "description": "The Arts Center Winter/Spring 2018 Catalog",
+    "long_desc": "",
+    "category": "CATALOG DESIGN",
+    "date": "Fall, 2018",
+    "displayType": "book",
+    "image": "images/sample11.png",
+    "url": "http://online.pubhtml5.com/btss/haem/",
+    "slides": []
+  },
+  {
     "index": 10,
     "title": "The Arts Center",
     "description": "",
