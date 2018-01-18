@@ -1,5 +1,38 @@
 [
   {
+    "index": 14,
+    "title": "A Frame Design",
+    "description": "",
+    "long_desc": "",
+    "category": "PROMOTION DESIGN",
+    "date": "Winter, 2017",
+    "displayType": "image",
+    "image": "images/sample14.png",
+    "slides": ["../../images/frame/frame1.png","../../images/frame/frame2.png"]
+  },
+  {
+    "index": 13,
+    "title": "Holiday Card Design",
+    "description": "",
+    "long_desc": "",
+    "category": "BRANDING & PROMOTION DESIGN",
+    "date": "Winter, 2017",
+    "displayType": "image",
+    "image": "images/sample13.png",
+    "slides": ["../../images/card/card1.png","../../images/card/card2.png"]
+  },
+  {
+    "index": 12,
+    "title": "Creativity is A Gift",
+    "description": "",
+    "long_desc": "",
+    "category": "BRANDING DESIGN",
+    "date": "Winter, 2017",
+    "displayType": "image",
+    "image": "images/sample12.png",
+    "slides": ["../../images/Creativity/Creativity1.png","../../images/Creativity/Creativity2.png","../../images/Creativity/Creativity3.png","../../images/Creativity/Creativity4.png"]
+  },
+  {
     "index": 11,
     "title": "The Arts Center Winter/Spring 2018 Catalog",
     "description": "The Arts Center Winter/Spring 2018 Catalog",
@@ -20,7 +53,7 @@
     "date": "Fall, 2017",
     "displayType": "image",
     "image": "images/sample10.jpg",
-    "slides": ["../../images/artcenter/artcenter1.png","../../images/artcenter/artcenter2.png","../../images/artcenter/artcenter22.png","../../images/artcenter/artcenter24.png","../../images/artcenter/artcenter26.png","../../images/artcenter/artcenter3.jpg","../../images/artcenter/artcenter4.png","../../images/artcenter/artcenter45.jpg","../../images/artcenter/artcenter5.png","../../images/artcenter/artcenter6.jpg","../../images/artcenter/artcenter7.png"]
+    "slides": ["../../images/artcenter/artcenter1.png","../../images/artcenter/artcenter2.png","../../images/artcenter/artcenter22.png","../../images/artcenter/artcenter24.png","../../images/artcenter/artcenter26.png","../../images/artcenter/artcenter3.jpg","../../images/artcenter/artcenter4.png","../../images/artcenter/artcenter45.jpg","../../images/artcenter/artcenter5.png","../../images/artcenter/artcenter6.jpg","../../images/artcenter/artcenter62.png","../../images/artcenter/artcenter7.png"]
   },
   {
     "index": 8,
