@@ -62,7 +62,7 @@
       }
     </style>
 
-    <div class="tmp-image">
+    <div class="tmp-image" hidden$="[[!hide]]>
         <p>Please, visit again lagter.</p><br/>
         <img src="../images/construction.jpg"/>
     </div>
@@ -94,7 +94,7 @@
     is: 'artwork-demo',
 
     attached: function() {
-      this.hide = true;
+      this.hide = false;
       this.toggleClass("active", true, this.$.work);
     },
 
